@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="main-container">
+      <div><a href="https://github.com/ButTaiwan/gensen-font" target="_blank">源泉圓體 - 繁體中文</a></div>
+      <div><a href="javascript:history.back();">Back</a></div>
+      <section class="gensen-font-ttc">
+        <h1>源泉圓體 ttc
+        </h1>
+        <h2>次標題</h2>
+        <h3>文章測試</h3>
+        <h4>英文</h4>
+        <p>Font Size 16: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h4>中文</h4>
+        <p class="font-size-24">Font Size 24: 趨勢科技客戶成功暨資安研究副總裁吉布生（Mike Gibson）表示，過去一年，趨勢科技看到全球企業機構因為關鍵IT資產與終端使用者變得更加分散，難以應付突然暴增的網路犯罪。由於資安人才依然短缺，因此鼓勵更多人投入資安產業非常重要，CTF提供一個讓全世界網路資安好手互相切磋競技並解決最新挑戰的理想舞台。</p>
+        <p class="font-size-20">Font Size 20: 趨勢科技客戶成功暨資安研究副總裁吉布生（Mike Gibson）表示，過去一年，趨勢科技看到全球企業機構因為關鍵IT資產與終端使用者變得更加分散，難以應付突然暴增的網路犯罪。由於資安人才依然短缺，因此鼓勵更多人投入資安產業非常重要，CTF提供一個讓全世界網路資安好手互相切磋競技並解決最新挑戰的理想舞台。</p>
+        <p>Font Size 16: 資安業者趨勢科技今天公布第7屆Capture the Flag（CTF）全球網路攻防搶旗賽時程，藉此鼓勵更多人才投入資安產業，線上預賽將於9月18日至19日舉行，預賽前10名隊伍將晉級預計12月18日至19日舉行的虛擬決賽。</p>
+        <p class="font-size-14">Font Size 14: 趨勢科技客戶成功暨資安研究副總裁吉布生（Mike Gibson）表示，過去一年，趨勢科技看到全球企業機構因為關鍵IT資產與終端使用者變得更加分散，難以應付突然暴增的網路犯罪。由於資安人才依然短缺，因此鼓勵更多人投入資安產業非常重要，CTF提供一個讓全世界網路資安好手互相切磋競技並解決最新挑戰的理想舞台。</p>
+        <p class="font-size-12">Font Size 12: 今年的競賽共分兩階段，包括線上預賽與虛擬決賽。線上預賽將於日本標準時間 9 月 18-19 日舉行，全程共 24 小時，採「解題」（Jeopardy）形式來考驗參賽隊伍解決問題的能力。</p>
+      </section>
+      <p class="text-tip text-center font-size-12">Font Size: 31 MB</p>
+    </main>
+    <script>
+      var before_loadtime = new Date().getTime();
+      window.onload = pageloadtime;
+      
+      function pageloadtime() {  
+      	var aftr_loadtime = new Date().getTime();  
+      	// Time calculating in seconds  
+      	pgloadtime = (aftr_loadtime - before_loadtime) / 1000;
+      
+      	var msg = "Pgae load time is <b>" + pgloadtime + "</b> Seconds"
+      
+      	var p = document.createElement('p');
+      	p.className = 'text-tip text-center font-size-12'
+      	p.innerHTML = msg;
+      	document.body.appendChild(p);
+      }
+    </script>
+  </body>
+</html>

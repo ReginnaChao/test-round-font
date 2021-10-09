@@ -1,0 +1,23 @@
+extends _layout
+
+block content
+	h1.text-center 圓體測試
+	//- 源泉圓體
+	a(href='https://github.com/ButTaiwan/gensen-font' target='_blank') 源泉圓體 - 繁體中文
+
+	//- 源泉圓體 ttc
+	+article('源泉圓體 ttc', 'gensen-font-ttc', './test-gensen-ttc.html')
+
+	//- 源泉圓體 ttf
+	+article('源泉圓體 ttf', 'gensen-font-ttf', './test-gensen-ttf.html')
+
+	//- 源泉圓體 woff
+	+article('源泉圓體 woff', 'gensen-font-woff', './test-gensen-woff.html')
+
+	//- ============================================
+
+	//- Justfont 粉圓體
+	a(href='https://github.com/justfont/open-huninn-font/issues/39#issuecomment-894351064') Justfont 粉圓體
+
+	//- Justfont 粉圓體 woff
+	+article('Justfont 粉圓體 woff', 'open-huninn-ttf', './test-open-huninn-ttf.html')
