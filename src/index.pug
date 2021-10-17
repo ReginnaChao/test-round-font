@@ -6,13 +6,28 @@ block content
 	a(href='https://github.com/ButTaiwan/gensen-font' target='_blank') 源泉圓體 - 繁體中文
 
 	//- 源泉圓體 ttc
-	+article('源泉圓體 ttc', 'gensen-font-ttc', './test-gensen-ttc.html')
+	+article('源泉圓體 ttc', 'gensen-font-ttc-cdn')(
+		links = [
+			{ type: 'normal', href: './test-gensen-ttc.html' },
+			{ type: 'cdn', href: './test-gensen-ttc-cdn.html' }
+		]
+	)
 
 	//- 源泉圓體 ttf
-	+article('源泉圓體 ttf', 'gensen-font-ttf', './test-gensen-ttf.html')
+	+article('源泉圓體 ttf', 'gensen-font-ttf-cdn')(
+		links = [
+			{ type: 'normal', href: './test-gensen-ttf.html' },
+			{ type: 'cdn', href: './test-gensen-ttf-cdn.html' }
+		]
+	)
 
 	//- 源泉圓體 woff
-	+article('源泉圓體 woff', 'gensen-font-woff', './test-gensen-woff.html')
+	+article('源泉圓體 woff', 'gensen-font-woff-cdn')(
+		links = [
+			{ type: 'normal', href: './test-gensen-woff.html' },
+			{ type: 'cdn', href: './test-gensen-woff-cdn.html' }
+		]
+	)
 
 	//- ============================================
 
@@ -20,4 +35,9 @@ block content
 	a(href='https://github.com/justfont/open-huninn-font/issues/39#issuecomment-894351064') Justfont 粉圓體
 
 	//- Justfont 粉圓體 woff
-	+article('Justfont 粉圓體 woff', 'open-huninn-ttf', './test-open-huninn-ttf.html')
+	+article('Justfont 粉圓體 woff', 'open-huninn-ttf-cdn')(
+		links = [
+			{ type: 'normal', href: './test-open-huninn-ttf.html' },
+			{ type: 'cdn', href: './test-open-huninn-ttf-cdn.html' }
+		]
+	)

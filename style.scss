@@ -1,0 +1,173 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-tip {
+	color: #999;
+}
+
+.font-size-24 {
+	font-size: 24px;
+}
+
+.font-size-20 {
+	font-size: 20px;
+}
+
+.font-size-14 {
+	font-size: 14px;
+}
+
+.font-size-12 {
+	font-size: 12px;
+}
+
+.main-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section {
+	margin-bottom: 100px;
+}
+
+/* https://github.com/ButTaiwan/gensen-font 源泉圓體 - 繁體中文 */
+
+/* ========================= [START] 源泉圓體 TTC */
+
+/* CDN: https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-B.ttc */
+
+$folder-path: './fonts/'; // 本機檔案
+$cdn-path: 'https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/'; // CDN
+
+/**
+ * 建立字型讀取
+ * source: http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass
+ * @param {String} $path - 字型檔案資料夾路徑
+ * @param {String} $suffixes - Class 後綴
+ */
+@mixin font-build($path: $folder-path, $suffixes: '') {
+	@font-face {
+		font-family: 'gensen-font-ttc#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-R.ttc') format('truetype');
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+	}
+	
+	@font-face {
+		font-family: 'gensen-font-ttc#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-B.ttc') format('truetype');
+		font-style: normal;
+		font-weight: 600;
+		font-display: swap;
+	}
+	
+	.gensen-font-ttc#{$suffixes} {
+		font-family: 'gensen-font-ttc#{$suffixes}', sans-serif;
+	}
+	
+	/* ========================= [END] 源泉圓體 TTC */
+	
+	/* ========================= [START] 源泉圓體 TTF */
+	
+	@font-face {
+		font-family: 'gensen-font-ttf-tw#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-TW-R.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+	}
+	
+	@font-face {
+		font-family: 'gensen-font-ttf-tw#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-TW-B.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 600;
+		font-display: swap;
+	}
+	
+	@font-face {
+		font-family: 'gensen-font-ttf-jp#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-JP-R.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+	}
+	
+	@font-face {
+		font-family: 'gensen-font-ttf-jp#{$suffixes}';
+		src: url('#{$path}gen-sen-rounded/GenSenRounded-JP-B.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 600;
+		font-display: swap;
+	}
+	
+	.gensen-font-ttf#{$suffixes} {
+		font-family: 'gensen-font-ttf-tw#{$suffixes}', sans-serif;
+	}
+	
+	/* ========================= [END] 源泉圓體 TTF */
+	
+	/* ========================= [START] 源泉圓體 WOFF */
+	
+	@font-face {
+		font-family: 'gensen-font-woff#{$suffixes}';
+		src: 
+			url('#{$path}gen-sen-rounded/GenSenRounded-TW-R.woff2') format('woff2'),
+			url('#{$path}gen-sen-rounded/GenSenRounded-TW-R.woff') format('woff');
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+	}
+	
+	@font-face {
+		font-family: 'gensen-font-woff#{$suffixes}';
+		src:
+			url('#{$path}gen-sen-rounded/GenSenRounded-TW-B.woff2') format('woff2'),
+			url('#{$path}gen-sen-rounded/GenSenRounded-TW-B.woff') format('woff');
+		font-style: normal;
+		font-weight: 600;
+		font-display: swap;
+	}
+	
+	.gensen-font-woff#{$suffixes} {
+		font-family: 'gensen-font-woff#{$suffixes}', sans-serif;
+	}
+	
+	/* ========================= [END] 源泉圓體 WOFF */
+	
+	
+	/* ========================= [START] 粉圓體 TTF */
+	@font-face {
+		font-family: 'open-huninn-ttf#{$suffixes}';
+
+		@if str-index($path, 'cdn') {
+			src: url('https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@master/font/jf-openhuninn-1.1.ttf') format('truetype');
+		} @else {
+			src: url('#{$path}open-huninn/jf-openhuninn-1.1.ttf') format('truetype');
+		}
+
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+	}
+	
+	.open-huninn-ttf#{$suffixes} {
+		font-family: 'open-huninn-ttf#{$suffixes}', sans-serif;
+	}
+
+	/* ========================= [END] 粉圓體 TTF */
+
+}
+
+// 一般檔案路徑
+@include font-build($folder-path);
+
+// CDN
+@include font-build($cdn-path, '-cdn');

@@ -1,10 +1,17 @@
-mixin article(title, className, href)
+mixin article(title, className)
+	- links = attributes.links
 	section(class!=className)
 		h1
 			| #{title}
-			if href
-				| （
-				a(href=href) 單獨測試
+			if links
+				| （單獨測試：
+				each val, i in links
+					if val.type === 'cdn'
+						a(href=val.href) CDN版本
+					else
+						a(href=val.href) 本機檔案版本
+					if i !== links.length - 1
+						| 、
 				| ）
 		h2 次標題
 		h3 文章測試
@@ -29,7 +36,7 @@ mixin insideHeader(title, href)
 	div
 		a(href=href target='_blank')= title
 	div
-		a(href='javascript:history.back();') Back
+		a(href='./') Back
 
 mixin fontFileSize(text)
 	p.text-tip.text-center.font-size-12 Font Size: #{text}

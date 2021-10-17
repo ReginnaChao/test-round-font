@@ -1,145 +1,220 @@
+@charset "UTF-8";
 body {
-	font-family: sans-serif;
-	line-height: 1.5;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .text-tip {
-	color: #999;
+  color: #999;
 }
 
 .font-size-24 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .font-size-20 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .font-size-14 {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .font-size-12 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .main-container {
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 section {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* https://github.com/ButTaiwan/gensen-font 源泉圓體 - 繁體中文 */
 /* ========================= [START] 源泉圓體 TTC */
-
+/* CDN: https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-B.ttc */
+/**
+ * 建立字型讀取
+ * source: http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass
+ * @param {String} $path - 字型檔案資料夾路徑
+ * @param {String} $suffixes - Class 後綴
+ */
 @font-face {
-	font-family: 'gensen-font-ttc';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-R.ttc') format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "gensen-font-ttc";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-R.ttc") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
-
 @font-face {
-	font-family: 'gensen-font-ttc';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-B.ttc') format('truetype');
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
+  font-family: "gensen-font-ttc";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-B.ttc") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
-
 .gensen-font-ttc {
-	font-family: 'gensen-font-ttc', sans-serif;
+  font-family: "gensen-font-ttc", sans-serif;
 }
 
 /* ========================= [END] 源泉圓體 TTC */
-
 /* ========================= [START] 源泉圓體 TTF */
-
 @font-face {
-	font-family: 'gensen-font-ttf-tw';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-TW-R.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "gensen-font-ttf-tw";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-TW-R.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
-
 @font-face {
-	font-family: 'gensen-font-ttf-tw';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-TW-B.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
+  font-family: "gensen-font-ttf-tw";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-TW-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
-
 @font-face {
-	font-family: 'gensen-font-ttf-jp';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-JP-R.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "gensen-font-ttf-jp";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-JP-R.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
-
 @font-face {
-	font-family: 'gensen-font-ttf-jp';
-	src: url('./fonts/gen-sen-rounded/GenSenRounded-JP-B.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
+  font-family: "gensen-font-ttf-jp";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-JP-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
-
 .gensen-font-ttf {
-	font-family: 'gensen-font-ttf-tw', sans-serif;
+  font-family: "gensen-font-ttf-tw", sans-serif;
 }
 
 /* ========================= [END] 源泉圓體 TTF */
-
 /* ========================= [START] 源泉圓體 WOFF */
-
 @font-face {
-	font-family: 'gensen-font-woff';
-	src: 
-		url('./fonts/gen-sen-rounded/GenSenRounded-TW-R.woff2') format('woff2'),
-		url('./fonts/gen-sen-rounded/GenSenRounded-TW-R.woff') format('woff');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "gensen-font-woff";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-TW-R.woff2") format("woff2"), url("./fonts/gen-sen-rounded/GenSenRounded-TW-R.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
-
 @font-face {
-	font-family: 'gensen-font-woff';
-	src:
-		url('./fonts/gen-sen-rounded/GenSenRounded-TW-B.woff2') format('woff2'),
-		url('./fonts/gen-sen-rounded/GenSenRounded-TW-B.woff') format('woff');
-	font-style: normal;
-	font-weight: 600;
-	font-display: swap;
+  font-family: "gensen-font-woff";
+  src: url("./fonts/gen-sen-rounded/GenSenRounded-TW-B.woff2") format("woff2"), url("./fonts/gen-sen-rounded/GenSenRounded-TW-B.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
-
 .gensen-font-woff {
-	font-family: 'gensen-font-woff', sans-serif;
+  font-family: "gensen-font-woff", sans-serif;
 }
 
 /* ========================= [END] 源泉圓體 WOFF */
-
-
 /* ========================= [START] 粉圓體 TTF */
 @font-face {
-	font-family: 'open-huninn-ttf';
-	src: url('https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@master/font/jf-openhuninn-1.1.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
+  font-family: "open-huninn-ttf";
+  src: url("./fonts/open-huninn/jf-openhuninn-1.1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.open-huninn-ttf {
+  font-family: "open-huninn-ttf", sans-serif;
 }
 
-.open-huninn-ttf {
-	font-family: 'open-huninn-ttf', sans-serif;
+/* ========================= [END] 粉圓體 TTF */
+@font-face {
+  font-family: "gensen-font-ttc-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-R.ttc") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+@font-face {
+  font-family: "gensen-font-ttc-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-B.ttc") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.gensen-font-ttc-cdn {
+  font-family: "gensen-font-ttc-cdn", sans-serif;
+}
+
+/* ========================= [END] 源泉圓體 TTC */
+/* ========================= [START] 源泉圓體 TTF */
+@font-face {
+  font-family: "gensen-font-ttf-tw-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-R.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gensen-font-ttf-tw-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gensen-font-ttf-jp-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-JP-R.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gensen-font-ttf-jp-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-JP-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.gensen-font-ttf-cdn {
+  font-family: "gensen-font-ttf-tw-cdn", sans-serif;
+}
+
+/* ========================= [END] 源泉圓體 TTF */
+/* ========================= [START] 源泉圓體 WOFF */
+@font-face {
+  font-family: "gensen-font-woff-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-R.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-R.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gensen-font-woff-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-B.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/reginna-chao/test-round-font@1.0.0/fonts/gen-sen-rounded/GenSenRounded-TW-B.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.gensen-font-woff-cdn {
+  font-family: "gensen-font-woff-cdn", sans-serif;
+}
+
+/* ========================= [END] 源泉圓體 WOFF */
+/* ========================= [START] 粉圓體 TTF */
+@font-face {
+  font-family: "open-huninn-ttf-cdn";
+  src: url("https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@master/font/jf-openhuninn-1.1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.open-huninn-ttf-cdn {
+  font-family: "open-huninn-ttf-cdn", sans-serif;
+}
+
 /* ========================= [END] 粉圓體 TTF */
